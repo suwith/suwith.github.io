@@ -1,19 +1,11 @@
 # Site settings
-title: Emping
-email: your-email@domain.com
+title: Suwith
+email: suwith@kookmin.ac.kr
 description: > # this means to ignore newlines until "baseurl:"
-  Let's Eat!!.
-baseurl: "" # the subpath of your site, e.g. /newpath-for-emping
-url: "http://example.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-GoogleAnalytics: UA-xxxxxx-x
-
-twitter:
-  username: rmsubekti
-facebook:
-  app_id: 1234567
-  publisher: 1234567
+  I am happy student
+baseurl: "https://blog.naver.com/sooy709" # the subpath of your site, e.g. /newpath-for-emping
+url: "https://blog.naver.com/sooy709" # the base hostname & protocol for your site
+github_username:  suwith
 
 sass:
     style: compressed
