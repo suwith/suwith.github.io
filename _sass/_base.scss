@@ -8,15 +8,12 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -38,6 +35,13 @@ ul, ol, dl, figure,
 }
 
 
+hr {
+  display: block;
+  border: none;
+  height: 1px;
+  margin: 40px auto;
+  background: #eee;
+}
 
 /**
  * Images
@@ -59,8 +63,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -100,7 +102,6 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
@@ -129,7 +130,8 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+  font-family: Menlo,Monaco,Courier;
+    font-size: 14px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
@@ -155,20 +157,21 @@ pre {
 /**
  * Wrapper
  */
+ .default .wrapper{
+   max-width: 600px;
+ }
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+  padding-right: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+  margin: 0 auto;
+  @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+      max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+      max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+      padding: 0 $spacing-unit;
     }
 }
 
