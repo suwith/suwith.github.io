@@ -1,35 +1,39 @@
-# No Longer Maintained.
-  use this one instead [nangka jekyll theme](https://github.com/rmsubekti/nangka)
-# Emping - Amp theme for jekyll
-An Amphtml theme for your jekyll blog, based on default Jekyll theme. Theme design inspired from the Jekyll [Kactus](https://github.com/nickbalestra/kactus) theme.
+# suwith.github.io BUILD PROCESS
 
-![screenshoot](https://github.com/rmsubekti/emping/raw/master/Screenshot.png)
 
-### Feature
 
-- [x] **Amp Page**
-- [x] **Google Analytics**
-- [x] **Pagination**
-- [x] **404 Error Page**
-- [x] **SEO** Gems: *[jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap), [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag), [jekyll-feed](https://github.com/jekyll/jekyll-feed)*
-- [x] **Share Button**
 
-### [View Demo](http://rmsubekti.github.io/emping)
+# markdown 
 
-### Use this theme
-Simply fork this repo, and rename to `your_github_username.github.io`.
-
-### Run this theme on your local machine
-To serve this jekyll theme make sure your computer meets the [following requirements](https://jekyllrb.com/docs/installation/#requirements), then run this command.
-
+## 코드 블럭과 회색 박스
 ```
-git clone git@github.com:rmsubekti/emping.git
-cd emping
-bundle install
-bundle exec jekyll s
+```...```를 써서 코드블럭 생성
+`...`를 써서 회색 박스 생성
+```
+위는 코드블럭으로 감싼 것이고 `회색 박스`는 이렇게 나타난다.
+
+## 제목(header)
+```
+header은 #부터 ######까지 크기에 따라 나타날 수 있다.
+적을수록 크기가 크다.
+```
+  # First header
+  ## Second
+  ### Third
+원래 쓰던 velog와는 달리 header아래에 선이 표시되는 것 같다.
+
+## 인용문
+`>`를 이용해 인용문을 쓸 수 있다.
+> 인용문
+## 텍스트 표현
+```
+_이탤릭_
+**볼드**
+__볼드__
+~~취소선~~
 ```
 
-You can change the site configuration in the [_config.yml](https://github.com/rmsubekti/emping/blob/master/_config.yml) file.
-
-License : [MIT](https://github.com/rmsubekti/emping/blob/master/LICENSE.md)
-Feel free to fork, change, modify and re-use it.
+_이탤릭_
+**볼드**
+__볼드__
+~~취소선~~
