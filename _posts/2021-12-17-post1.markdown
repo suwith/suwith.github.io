@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "How to Git"
+date:   2021-12-17 02:52:57 +0900
+categories: jekyll update
+---
+# HOW TO GIT
+1. 파일 추가
+``` git add <file name>
+git add *
+git add .
+```
+2. 커밋
+``git commit -m "commit message"
+```
+3. 푸쉬
+``` git push```
+
+#### 파일을 수정하는 작업을 하기 전에 원격 저장소의 변경 내용을 가져오는 습관을 들이자
+```git pull```
+** 충돌을 방지할 수 있다**
+
+
